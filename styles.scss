@@ -1,0 +1,17 @@
+$cor-primaria: #007bff;
+$cor-secundaria: #ff9800;
+$tamanho-fonte-padrao: 16px;
+
+#username {
+  color: $cor-primaria;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: $tamanho-fonte-padrao;
+}
+
+.buttonEnviar {
+  background-color: $cor-secundaria;
+  padding: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: $tamanho-fonte-padrao * 1.2; /* Exemplo de cálculo usando a variável */
+}

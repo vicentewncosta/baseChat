@@ -1,0 +1,16 @@
+@charset "UTF-8";
+#username {
+  color: #007bff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.buttonEnviar {
+  background-color: #ff9800;
+  padding: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 19.2px; /* Exemplo de cálculo usando a variável */
+}
+
+/*# sourceMappingURL=styles.css.map */
