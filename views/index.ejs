@@ -10,13 +10,14 @@
     <!-- Estilização do chat -->
     <style>
 
+        #layout{
+            background-color: black;
+            padding: 30px;
+        }
+
         h1 {
             color: #919190;
             font-size: 26px; 
-        }
-
-        messageDisplay {
-        color: #ff0000; 
         }
         
         #chat{
@@ -54,6 +55,7 @@
         #username {
             color: black ;
         }
+        
 
     </style>
 
@@ -81,7 +83,8 @@
                     class= "form-control">
 
                 <div class="d-grid gap-2"><br>
-                    <button id="buttonEnviar" 
+                    <button 
+                        id="buttonEnviar" 
                         onclick= "enviar()" 
                         class= "btn btn-primary" 
                         type= "button">
@@ -109,6 +112,7 @@
             var p  = document.createElement("p");
             p.innerHTML =  data.username + ": " + data.msg;
             chat.append(p);
+
         });
 
         function enviar(){
