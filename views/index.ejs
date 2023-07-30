@@ -16,6 +16,9 @@
         </script>
     </head>
     <style>
+        body{
+            background-color: gray;
+        }
         #layout{  
             background-color: #F4F6F7;
             padding: 40px 50px;
@@ -30,13 +33,11 @@
             transform: translate(-50%, -50%);
             border-radius: 25px 25px 25px 25px;
         }
-
         h2{
             color: black;
             font-size: 19px; 
             font-family: Arial, Helvetica, sans-serif;
         }
-        
         #chat{
             height: 430px;
             max-height: 4700px;
@@ -50,14 +51,12 @@
             font-family: Arial, Helvetica, sans-serif;
             border-radius: 15px 5px 5px 25px;
         }
-
         #tela{
             align-items: center;
             background-color: #F4F6F7;
-            padding: 0px 20px; 
+            padding: 0px 15px; 
             border-radius: 25px 25px 25px 25px;
         }
-
         #buttonEnviar{
             border: 2px solid #8E44AD;
             padding: 10px 20px; 
@@ -68,57 +67,47 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: #8E44AD;
         }
-
         #buttonEnviar:hover{
             border: 2px solid #2ECC71;
             background-color: #2ECC71;
             color: white;
         }
-
-        <!-- Customização das letras do campo de msg-->
+        /* Customização das letras do campo de msg */
         #msg{
             color: #8E44AD;
             font-family: Arial, Helvetica, sans-serif;
         }
-
-        <!-- Customização das letras do campo de username-->
+        /* Customização das letras do campo de username  */
         #username{
             color: black;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
         }
-
         #inputUser{
             border-radius: 5px;
             border: 3px solid #BB8FCE;
             background-color: #8E44AD;
         }
-
         #inputUser:hover{
             border: 2px solid #2ECC71;
             background-color: #2ECC71;
             color: white;
         }
-        
         #inputMsg{
             border-radius: 5px;
             border: 3px solid #BB8FCE;
             background-color: #8E44AD;
         }
-
         #inputMsg:hover{
             border: 2px solid #2ECC71;
             background-color: #2ECC71;
             color: white;
         }
-    
     </style>
+  
     <body>
         <div id="layout"> 
             <div id="tela">
-                <h2>
-                    <!-- Chat ChatO 🔔 -->
-                </h2>
                 <div id="chat"></div>
                 <br>
                 <div id="inputMsg" class="d-grid gap-2">
