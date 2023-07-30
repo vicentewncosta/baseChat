@@ -9,32 +9,34 @@
     </head>
     <!-- Estilização do chat -->
     <style>
-
         #layout{
-            background-color: #1C1C1C;
+            background-color: #696969;
             padding: 30px;
             max-height: 750px;
-            max-width: 600px;
+            max-width: 650px;
             border: 1px solid yellow;
         }
 
         h2 {
             color: yellow;
-            font-size: 26px; 
+            font-size: 25px; 
+            font-family: Arial, Helvetica, sans-serif;
         }
         
         #chat{
-            border: 1px solid yellow;
-            max-height: 500px;
-            min-height: 400px;
+            border: 1px solid black;
+            max-height: 350px;
+            min-height: 350px;
             max-width: 100%;
-            background-color: #1C1C1C;
+            background-color: #696969;
             overflow-y: scroll;
             color: yellow;
         }
 
         #tela{
-            background-color: #1C1C1C;
+            background-color: #696969;
+            border: 3px solid black;
+            padding: 10px 20px; 
         }
 
         #buttonEnviar {
@@ -64,42 +66,54 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
         }
+
+        #fundoTela{
+            width: 100%;
+            min-height: 100%;
+            background-size: cover;
+            
+        }
     
     </style>
-    <body>
-        <div id="layout"> 
-            <div id="tela">
-                <h2>
-                    Chat ChatO 🔔
-                </h2>
-                
-                <div id="chat"></div>
-                <br>
-                <input 
-                    type="text" 
-                    name="" 
-                    id="msg" 
-                    placeholder="Digite sua mensagem" 
-                    class="form-control"><br>
-                
-                <input 
-                    type= "text" 
-                    name= "" 
-                    id= "username" 
-                    placeholder= "Seu nome de usuário" 
-                    class= "form-control">
+    <body> 
+        <div 
+            id="fundoTela" 
+            style="text-align: center;">
+                <img src="https://i0.wp.com/multarte.com.br/wp-content/uploads/2019/01/fundo-3d-preta6.jpg?fit=1280%2C720&ssl=1" alt="Imagem" />
+            <div id="layout"> 
+                <div id="tela">
+                    <h2>
+                        Chat ChatO 🔔
+                    </h2>
+                    
+                    <div id="chat"></div>
+                    <br>
+                    <input 
+                        type="text" 
+                        name="" 
+                        id="msg" 
+                        placeholder="Digite sua mensagem" 
+                        class="form-control"><br>
+                    
+                    <input 
+                        type= "text" 
+                        name= "" 
+                        id= "username" 
+                        placeholder= "Seu nome de usuário" 
+                        class= "form-control">
 
-                <div class="d-grid gap-2"><br>
-                    <button 
-                        id="buttonEnviar" 
-                        onclick= "enviar()" 
-                        class= "btn btn-primary" 
-                        type= "button">
-                        Enviar
-                    </button><br>
+                    <div class="d-grid gap-2"><br>
+                        <button 
+                            id="buttonEnviar" 
+                            onclick= "enviar()" 
+                            class= "btn btn-primary" 
+                            type= "button">
+                            Enviar
+                        </button><br>
+                    </div>
                 </div>
-            </div>
-        </div> 
+            </div> 
+        </div>
     </body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.1/socket.io.js"></script>
